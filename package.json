@@ -1,0 +1,11 @@
+{
+  "name": "zzdmitry.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ZzDmitry/zzdmitry.github.io.git",
+  "author": "Dmitry Zyryanov <Dmitrii.Zyrianov@noveo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
