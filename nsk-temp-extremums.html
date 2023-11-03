@@ -40,11 +40,13 @@
     (pos, index) => {
       const img = document.createElement('img');
       img.src = `http://www.pogodaiklimat.ru/monitor_grafik.php?y=${YEAR}&m=${index + 1}&id=${CITY_ID}`;
-      img.style.top = `${pos[0]}px`;
+      img.style.top = `${/*pos[*/0/*]*/}px`;
       img.style.height = `${pos[1]}px`;
+      img.style.zIndex = `-${index}`;
       return img;
     },
   );
+  // width:300px;height:300px;background:url(http://www.pogodaiklimat.ru/monitor_grafik.php?y=2019&m=1&id=29638);background-position:0px -5px;background-size:300px 370px;
   imgs.forEach(img => document.body.appendChild(img));
 </script>
 </html>
